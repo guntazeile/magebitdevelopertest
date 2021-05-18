@@ -1,0 +1,381 @@
+$position: absolute;
+$lightgraycolor:#6A707B;
+$bluecolor:#4066A5;
+$blackcolor: #131821;
+$font:Arial;
+$style:normal;
+$weight:normal;
+$textdecoration:none;
+$verylightcolor:#E3E3E4;
+$darkerbluecolor:#2F4A80;
+$textline:underline;
+
+.base{
+    position: $position;
+    width: 680px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+}
+.image_summer{
+    position: $position;
+    width: 1620px;
+    height: 1080px;
+    left: 680px;
+    top: 0px;
+    z-index:-5;
+}
+/*navigation*/
+.logo_pineapple{
+    position: $position;
+    width: 118px;
+    height: 40px;
+    left: 100px;
+    top: 100px;
+}
+.links_about{
+    position: $position;
+    width: 42px;
+    height: 26px;
+    left: 331px;
+    top: 114px;
+
+    font-family: $font;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: 16px;
+    line-height: 26px;
+    color: $lightgraycolor;
+    text-decoration: $textdecoration;
+}
+.links_howitworks{
+    position: $position;
+    width: 91px;
+    height: 26px;
+    left: 403px;
+    top: 114px;
+
+    font-family: $font;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: 16px;
+    line-height: 26px;
+    color: $lightgraycolor;
+    text-decoration: $textdecoration;
+}
+.links_contact{
+    position: $position;
+    width: 56px;
+    height: 26px;
+    left: 524px;
+    top: 114px;
+
+    font-family: $font;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: 16px;
+    line-height: 26px;
+    color: $lightgraycolor;
+    text-decoration: $textdecoration;
+}
+/*headings*/
+.heading{
+    position: $position;
+    width: 399px;
+    height: 44px;
+    left: 140px;
+    top: 374px;
+
+    font-family: Georgia;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: 32px;
+    line-height: 44px;
+    color: $blackcolor;
+}
+.subheading{
+    position: $position;
+    width: 400px;
+    height: 56px;
+    left: 140px;
+    top: 433px;
+
+    font-family: $font;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: 16px;
+    line-height: 28px;
+    color: $lightgraycolor;
+}
+/*INPUT*/
+.input{
+    position: $position;
+    width: 663px;
+    height: 70px;
+    left: 100px;
+    top: 539px;
+
+    background: #FFFFFF;
+    border-top: 1px solid $verylightcolor;
+    border-bottom: 1px solid $verylightcolor;
+    border-right: 1px solid $verylightcolor;
+    border-left:4px solid $bluecolor;
+}
+.input:hover{
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+    border-color: $bluecolor;
+}
+.input:hover ::-webkit-input-placeholder{
+    color: $blackcolor;
+}
+.input:hover .arrow_hover{
+    fill:$bluecolor;
+}
+.placeholder{
+    position: $position;
+    height: 24px;
+    width: 227px;
+    bottom: 23px;
+    left: 44px;
+    top: 23px;
+    right: 392px;
+    padding:0;
+    border:0;
+
+    font-family: $font;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: 16px;
+    line-height: 24px;
+    color: $lightgraycolor;
+}
+.ic_arrow{
+    position: $position;
+    width: 24px;
+    height: 14px;
+    left: 599px;
+    right: 40px;
+    top: 28px;
+    bottom: 28px;
+}
+
+/*TOS AND CHECKBOX*/
+[type="checkbox"]:checked{
+    background: $bluecolor;
+}
+.checkbox > input {
+    height: 26px;
+    width: 26px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid $verylightcolor;
+    border-radius: 3px;
+    outline: none;   
+    margin:0;
+}
+.checkbox > input:checked + span::before {
+    content: url(./ic_checkmark.svg);
+    position: $position;
+    left: 6px;
+    top: 5px;
+    bottom: 7px;
+    right: 6x;
+    margin:0;
+}
+.TOS{
+    position: $position;
+    width: 400px;
+    height: 28px;
+    left: 140px;
+    top: 662px;
+}
+.TOS_text{
+    position: $position;
+    width: 359px;
+    height: 28px;
+    left: 41px;
+    top: 0px;
+    bottom: 0px;
+    margin: 0;
+
+    font-family: $font;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: 16px;
+    line-height: 28px;
+    color: $lightgraycolor;
+}
+.TOS_text_diff{
+    color: $blackcolor;
+    text-decoration: $textline;
+}
+.TOS_text_diff:hover{
+    color: $bluecolor;
+    text-decoration: $textline;
+}
+.TOS_text_diff:focus{
+    color: $darkerbluecolor;
+    text-decoration: $textline;
+}
+/*LINE*/
+.line{
+    position: $position;
+    width: 400px;
+    height: 1px;
+    left: 140px;
+    top: 740px;
+
+    background: $verylightcolor;
+}
+/*SOCIAL ICONS*/
+.social_icons{
+    position: $position;
+    width: 244px;
+    height: 46px;
+    left: 218px;
+    top: 791px;
+}
+.social_icons_base_facebook{
+    position: $position;
+    width: 46px;
+    height: 46px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    border: 2px solid $verylightcolor;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.facebook:hover{
+    background: #4267B2;
+    border-color: #4267B2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.facebook:active{
+    background: $darkerbluecolor;
+    border-color: $darkerbluecolor;
+}
+.social_icons_base_facebook:hover .facebook_hover{
+    fill: white;
+}
+.ic_facebook{
+    position: $position;
+    left: 17px;
+    right: 17px;
+    top: 13px;
+    bottom: 13px;
+}
+.social_icons_base_instagram{
+    position: $position;
+    width: 46px;
+    height: 46px;
+    left: 66px;
+    right: 132px;
+    top: 0px;
+    bottom: 0px;
+
+    border: 2px solid $verylightcolor;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.ic_instagram{
+    position: $position;
+    left: 13px;
+    top: 13px;
+    bottom: 13px;
+}
+.instagram:hover{
+    background: #c13584;
+    border-color: #c13584;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.instagram:active{
+    background: #8F2762;
+    border-color: #8F2762;
+}
+.social_icons_base_instagram:hover .instagram_hover{
+    fill: white;
+}
+.social_icons_base_twitter{
+    position: $position;
+    width: 46px;
+    height: 46px;
+    left: 132px;
+    right: 66px;
+    top: 0px;
+    bottom: 0px;
+
+    border: 2px solid $verylightcolor;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.ic_twitter{
+    position: $position;
+    left: 13px;
+    top: 15px;
+    bottom: 14px;
+}
+.twitter:hover{
+    background: #1da1f2;
+    border-color: #1da1f2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.twitter:active{
+    background: #177FBF;
+    border-color: #177FBF;
+}
+.social_icons_base_twitter:hover .twitter_hover{
+    fill: white;
+}
+.social_icons_base_youtube{
+position: $position;
+width: 46px;
+height: 46px;
+left: 198px;
+top: 0px;
+bottom: 0px;
+
+border: 2px solid $verylightcolor;
+box-sizing: border-box;
+border-radius: 50px;
+}
+.ic_youtube{
+position: $position;
+left: 13px;
+top: 15px;
+bottom: 16px;
+}
+.youtube:hover{
+    background: #ff0000;
+    border-color: #ff0000;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.youtube:active{
+    background: #CC0000;
+    border-color: #CC0000;
+}
+.social_icons_base_youtube:hover .youtube_hover{
+    fill: white;
+}
+/*js error*/
+.error{
+    padding-top:5em;
+    color: $bluecolor;
+}
+/*button for input*/
+#arrow_button{
+    display: none; 
+    border: none; 
+    background:none;
+}
+/*for succesful email*/
+.union{
+    position: $position;
+    width: 44px;
+    height: 70px;
+    left: 140px;
+    top: 269px;
+}
